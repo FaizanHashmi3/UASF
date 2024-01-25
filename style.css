@@ -44,20 +44,21 @@
 {
     position: fixed;
     color:#037859;
-    background-color: rgb(248, 255, 252);
+    background-color: white;
     height: 3.5rem;
     width: 100%;
-    border-bottom: 2px solid;
-    box-shadow: 5px 5px 10px #037959;
+    box-shadow: 5px 5px 10px rgba(120, 110, 110, 0.568);
     z-index: 1000000;
     padding: 0.5rem;
     
 }.nav-title
 {
+    color:#037859;
     font-family: 'Gotham', sans-serif;
     padding-left: 2rem;
     font-size: 2rem;
 }
+
 
 .first {
     align-items: center;
@@ -68,17 +69,18 @@
 {
     font-family: 'Gotham', sans-serif;
     font-weight: lighter;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.36rem;
 }
 .first-content
 {
+    
     font-family: 'Canva Sans', sans-serif;
-    font-weight:300;
-    /* font-style: italic; */
+    font-weight:700;
+   
 }
 .first-content-parent
 {
-    transform: translate(4rem,4rem);
+    transform: translate(7rem,3.7rem);
 }
 
 .full {
@@ -109,6 +111,7 @@
 {
     
     font-family: 'Bebas Neue', sans-serif;
+    letter-spacing:0.2rem;
    
 }
 .third-content
@@ -176,7 +179,7 @@
 }
 .light
 {
-    color:rgba(3, 121, 89, 0.8);
+    color:rgba(3, 121, 89, 0.7);
 }
 .desc
 {
@@ -189,7 +192,7 @@
 }
 .mission-head-parent
 {
-    transform: translate(-8rem,0);
+    transform: translate(-8.5rem,0);
 }
 .mission-head{
     font-family: 'Gotham', sans-serif;
@@ -199,16 +202,26 @@
 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 10rem;
+    letter-spacing: 0.6rem;
 }
+
 .fifth-head-parent1
 {
     transform: translate(-4rem,0);
+    text-align: start; 
+    direction: ltr; 
 }
 .fifth-head-parent2
 {
     transform: translate(-3rem,-2rem);
 }
-
+.fifth-head-bottom
+{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10rem;
+    letter-spacing: 0.6rem;
+    transform: translate(-5rem,-2rem);
+}
 
 @media (orientation: landscape) { /* Desktop */
     .full {
@@ -234,10 +247,18 @@
 
     .numbers
     {
-        font-size: 7rem;
+        font-size: 8rem;
         font-family: 'Bebas Neue', sans-serif;
         padding: 0 !important;
 
+    }
+    .food-numbers
+    {
+        margin-right:2.6rem;
+    }
+    .food-view-more
+    {
+        margin-right:2.6rem;
     }
     .join {
         font-family: 'Canva Sans', sans-serif;
@@ -252,7 +273,7 @@
     .greenBox {
         font-size: 130%;
         height: 5%;
-        width: 30%;
+        width: 40%;
         background-color: #037859;
         color: white;
         
@@ -264,6 +285,7 @@
        
         font-weight:0;
         font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 0.2rem;
     }
     .mission {
         z-index: 9999;
@@ -281,7 +303,7 @@
     font-family: 'Gotham', sans-serif;
     width: 70%;
     font-size: 2.3rem;
-    padding-bottom: 1.2rem;
+    padding-bottom: 0.7rem;
     letter-spacing: 0.5rem;
 }
 .third-head-parent
