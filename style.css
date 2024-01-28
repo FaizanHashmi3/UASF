@@ -131,6 +131,7 @@
     background-repeat: no-repeat;
     background-image: url('logo.jpg');
     width: 100%;
+    height: 100%;
 }
 
 .fifth {
@@ -222,18 +223,42 @@
     letter-spacing: 0.6rem;
     transform: translate(-5rem,-2rem);
 }
+.uasf {
+    font-family: 'Gotham', sans-serif;
+    font-size: 8vw;
+    font-weight: bolder;
+}
 
+.numbers
+{
+    font-size: 8rem;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0 !important;
+
+}
+.join {
+    font-family: 'Canva Sans', sans-serif;
+    font-size: 1.7vw;
+    transform: translate(10px,-35px);
+}
+.join-first {
+    font-family: 'Canva Sans', sans-serif;
+    font-size: 1.7vw;
+    
+}
+.grn-box-txt
+{
+   
+    font-weight:0;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.2rem;
+}
 @media (orientation: landscape) { /* Desktop */
     .full {
         flex-direction: row;
     }
     .fifth {
         flex-direction: row;
-    }
-    .uasf {
-        font-family: 'Gotham', sans-serif;
-        font-size: 8vw;
-        font-weight: bolder;
     }
     .title {
         font-size: 8vw;
@@ -245,13 +270,6 @@
         
     }
 
-    .numbers
-    {
-        font-size: 8rem;
-        font-family: 'Bebas Neue', sans-serif;
-        padding: 0 !important;
-
-    }
     .food-numbers
     {
         margin-right:2.6rem;
@@ -259,16 +277,6 @@
     .food-view-more
     {
         margin-right:2.6rem;
-    }
-    .join {
-        font-family: 'Canva Sans', sans-serif;
-        font-size: 1.7vw;
-        transform: translate(10px,-35px);
-    }
-    .join-first {
-        font-family: 'Canva Sans', sans-serif;
-        font-size: 1.7vw;
-       
     }
     .greenBox {
         font-size: 130%;
@@ -279,13 +287,6 @@
         
         /* border-radius: 10px; */
 
-    }
-    .grn-box-txt
-    {
-       
-        font-weight:0;
-        font-family: 'Bebas Neue', sans-serif;
-        letter-spacing: 0.2rem;
     }
     .mission {
         z-index: 9999;
@@ -320,14 +321,22 @@
     transform: translate(8rem,0);
 }
 @media (orientation: portrait) { /* Smartphone */
+    
+    .navbar
+    {
+        position: sticky;
+    }
     .full {
         flex-direction: column;
     }
     .fifth {
         flex-direction: column;
     }
+    
+    
     .uasf {
-        font-size: 18vw;
+        letter-spacing: 10px;
+        font-size: 15vw;
         font-weight: bolder;
     }
     .title {
@@ -346,13 +355,47 @@
         font-size: 100%;
         height: 10%; 
         width: 60%;
-        background-color: green;
+        background-color: #037859;
         color: white;
         border-radius: 10px;
     }
     .mission {
         z-index: 9999;
         font-size: 36px;
+    }
+    
+}
+@media (max-width: 400px) {
+    .first-content-mobile
+    {
+        /* background-color: bisque; */
+        transform: translate(0,-100%);
+    }
+    .first-main
+    {
+        display: flex;
+        /* background-color:aqua; */
+        width: 21rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 10;
+    }
+    .first-text-mobile{
+        /* background-color: black; */
+        transform: translate(0,-3.2rem);
+    }
+    .first-content-parent
+    {
+        /* background-color: black; */
+        /* width: 70px; */
+        height: 40px;
+        transform: translate(0,-12px);
+    }
+    .first-content
+    {
+        font-family: 'Canva Sans', sans-serif;
+        font-size: 20px;
     }
 }
 
