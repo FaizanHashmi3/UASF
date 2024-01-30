@@ -363,6 +363,11 @@
     
 }
 @media (max-width: 400px) {
+    .nav-title
+    {
+        /* background-color: black; */
+        padding-left: 0;
+    }
     .first-content-mobile
     {
         /* background-color: bisque; */
@@ -401,47 +406,55 @@
     {
         display: flex;
         /* background-color: aqua; */
+        justify-content: space-between;
         height: 25rem;
-        align-items: flex-start;
+        align-items: center;
+       
     }
   
-    .fooda{
+    .food{
         position: absolute;
-        top: 139%;
-        width: 40%;
+        left: 0;
+        /* background-color: black; */
+        width: 50%;
+        height: 60%;
     }
-    .familya{
+    .family{
+        /* background-color: black; */
         position: absolute;
-        top: 139%;
-        left: 50%;
-        width: 40%;
+        right: 0;
+        width: 50%;
+        height: 60%;
     }
-    .numbers
-{
-    /* font-size: 8rem; */
-    font-family: 'Bebas Neue', sans-serif;
-    /* padding: 0 !important; */
-
-}
+    
 .greenBox {
     /* font-size: 130%; */
     /* font-size: 18px; */
-    height: 20%;
-    width: 45%;
+    height: 5%;
+    width: 80%;
     background-color: #037859;
     color: white;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
+    font-weight: 0;
 }
 .green-box-txt
 {
     font-size: 10px;
-    letter-spacing: 0;
 }
 .numbers
 {
     font-size:80px;
+    font-family: 'Bebas Neue', sans-serif;
     
 }
+.food-numbers
+    {
+        margin-right:1.0rem;
+    }
+    .food-view-more
+    {
+        margin-right:1.3rem;
+    }
 .third,.fourth{
     height:25rem;
 }
@@ -482,7 +495,10 @@
 }
 .view-more-third
 {
-    transform: translate(30px,0);
+    position: relative;
+    right: 0;
+    padding-right: 5%;
+    transform: translate(0,0);
 }
 .fourth-content
 {
@@ -524,7 +540,7 @@
 {
     /* background-color: black; */
    
-    transform: translate(30%,-0%);
+    transform: translate(30%,-40%);
   
 }
 
