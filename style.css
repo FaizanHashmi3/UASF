@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     overflow-x: hidden;
     color: #037859;
 }
@@ -58,7 +58,13 @@
     padding-left: 2rem;
     font-size: 2rem;
 }
-
+.footer
+{
+    height: 70dvh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .first {
     align-items: center;
@@ -320,10 +326,6 @@
 }
 @media (orientation: portrait) { /* Smartphone */
     
-    .navbar
-    {
-        position: sticky;
-    }
     .full {
         flex-direction: column;
     }
@@ -365,27 +367,28 @@
 @media (max-width: 400px) {
     .nav-title
     {
-        /* background-color: black; */
         padding-left: 0;
     }
     .first-content-mobile
     {
-        /* background-color: bisque; */
-        transform: translate(0,-100%);
+        transform: translate(0,-80%);
     }
+    /* .down-icon
+    {
+        transform: translate(0,-1px);
+    } */
     .first-main
     {
         display: flex;
-        /* background-color:aqua; */
         width: 21rem;
         text-align: center;
         align-items: center;
         justify-content: center;
-        letter-spacing: 10;
+        letter-spacing: 3px;
     }
     .first-text-mobile{
-        /* background-color: black; */
-        transform: translate(0,-3.2rem);
+        font-weight: 400;
+        transform: translate(-10px,-2.6rem);
     }
     .first-content-parent
     {
@@ -395,7 +398,7 @@
         /* background-color: black; */
         width: 100%;
         /* height: 40px; */
-        transform: translate(0,-12px);
+        transform: translate(-13px,-8px);
     }
     .first-content
     {
@@ -456,11 +459,11 @@
         margin-right:1.3rem;
     }
 .third,.fourth{
-    height:25rem;
+    height:22rem;
 }
 .third-head-parent
 {
-    transform: translate(0,-50px);
+    transform: translate(0,-15px);
 }
 .third-head
 {
@@ -484,21 +487,21 @@
     align-items: center;
     width: 100%;
     margin-top: -20px;
-    transform: translate(0,-30px);
+    transform: translate(0,-1px);
 }
 .third-content
 {
     width: 100%;
     letter-spacing: 0;
     font-size: 13px;
-    transform: translate(10px,-30px);
+    transform: translate(10px,-10px);
 }
 .view-more-third
 {
     position: relative;
     right: 0;
     padding-right: 5%;
-    transform: translate(0,0);
+    transform: translate(0,-20px);
 }
 .fourth-content
 {
@@ -516,7 +519,7 @@
 .mission-head-parent
 {
     
-    transform: translate(0rem,30px);
+    transform: translate(0rem,50px);
     height: 20%;
 }
 .mission-head{
@@ -530,7 +533,7 @@
 }
 .fifth-head-parent2
 {
-    transform: translate(0,20px);
+    transform: translate(0,10px);
 }
 .fifth-head
 {
@@ -543,6 +546,14 @@
     transform: translate(30%,-40%);
   
 }
+.btn:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 0px white;
+}
+.logo{
+    height: 120%;
+}
+
 
 }
 
